@@ -1,0 +1,685 @@
+<section class="banner-section">
+  <canvas id="canvas"></canvas>
+  <div class="container">
+    <div class="text-block">
+      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)" (afterChange)="afterChange($event)">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+          <h1>{{dynamicHeaderText}}</h1>
+          <p>{{dynamicHeaderDescText}}</p>
+        </div>
+      </ngx-slick-carousel>
+    </div>
+  </div>
+</section>
+
+<section class="container-bg">
+  <div class="container">
+    <div class="text-wrapper has-gray-bg">
+      <h2 class="m-b-30">Who We Are?</h2>
+      <p>Welcome to Astute Info Solution, your trusted partner in digital innovation.We're experts in web crawling,
+        software development, and IT consulting. Whether you're a big company or just a startup, we're here to make
+        things easier for you.</p>
+      <p>We're a team of skilled tech experts who are passionate about creating customized solutions that fit your needs
+        perfectly. Whether you need to extract valuable data from the web, develop custom software, or refine your IT
+        strategy, we have the skills and experience to help you succeed.</p>
+      <P>At Astute Info Solution, our mission is to simplify your life. Our services are designed to streamline your
+        business operations, boost productivity, and unlock your full potential. Let our team be your trusted companion
+        in the world of technology.</P>
+    </div>
+  </div>
+</section>
+
+<section class="technology-slider p-t-0">
+  <div class="tech-slider-wrapper">
+    <ngx-slick-carousel class="carousel arrow-slider" #techSlider="slick-carousel" [config]="techConfig">
+      <div ngxSlickItem>
+        <a href="" title="" target="_blank">
+          <img src="../../assets/images/homepage/apple.svg" alt="Travel & Hospitality">
+        </a>
+      </div>
+      <div ngxSlickItem>
+        <a href="" title="" target="_blank" class="d-flex">
+          <img src="../../assets/images/homepage/angularjs-by-google.svg" alt="Travel & Hospitality">
+        </a>
+      </div>
+      <div ngxSlickItem>
+        <a href="" title="" target="_blank">
+          <img src="../../assets/images/homepage/android-logo.svg" alt="Travel & Hospitality">
+        </a>
+      </div>
+      <div ngxSlickItem>
+        <a href="" title="" target="_blank">
+          <img src="../../assets/images/homepage/flutter.svg" alt="Travel & Hospitality">
+        </a>
+      </div>
+      <div ngxSlickItem>
+        <a href="" title="" target="_blank">
+          <img src="../../assets/images/homepage/apple.svg" alt="Travel & Hospitality">
+        </a>
+      </div>
+      <div ngxSlickItem>
+        <a href="" title="" target="_blank">
+          <img src="../../assets/images/homepage/angularjs-by-google.svg" alt="Travel & Hospitality">
+        </a>
+      </div>
+      <div ngxSlickItem>
+        <a href="" title="" target="_blank">
+          <img src="../../assets/images/homepage/android-logo.svg" alt="Travel & Hospitality">
+        </a>
+      </div>
+      <div ngxSlickItem>
+        <a href="" title="" target="_blank">
+          <img src="../../assets/images/homepage/flutter.svg" alt="Travel & Hospitality">
+        </a>
+      </div>
+      <div ngxSlickItem>
+        <a href="" title="" target="_blank">
+          <img src="../../assets/images/homepage/apple.svg" alt="Travel & Hospitality">
+        </a>
+      </div>
+      <div ngxSlickItem>
+        <a href="" title="" target="_blank">
+          <img src="../../assets/images/homepage/angularjs-by-google.svg" alt="Travel & Hospitality">
+        </a>
+      </div>
+      <div ngxSlickItem>
+        <a href="" title="" target="_blank">
+          <img src="../../assets/images/homepage/android-logo.svg" alt="Travel & Hospitality">
+        </a>
+      </div>
+      <div ngxSlickItem>
+        <a href="" title="" target="_blank">
+          <img src="../../assets/images/homepage/flutter.svg" alt="Travel & Hospitality">
+        </a>
+      </div>
+      <div ngxSlickItem>
+        <a href="" title="" target="_blank">
+          <img src="../../assets/images/homepage/apple.svg" alt="Travel & Hospitality">
+        </a>
+      </div>
+      <div ngxSlickItem>
+        <a href="" title="" target="_blank">
+          <img src="../../assets/images/homepage/angularjs-by-google.svg" alt="Travel & Hospitality">
+        </a>
+      </div>
+      <div ngxSlickItem>
+        <a href="" title="" target="_blank">
+          <img src="../../assets/images/homepage/android-logo.svg" alt="Travel & Hospitality">
+        </a>
+      </div>
+      <div ngxSlickItem>
+        <a href="" title="" target="_blank">
+          <img src="../../assets/images/homepage/flutter.svg" alt="Travel & Hospitality">
+        </a>
+      </div>
+    </ngx-slick-carousel>
+  </div>
+
+</section>
+
+<section class="grid-with-hover-section p-t-0 text-center ">
+  <div class="container">
+    <h2 class="m-b-30">Our Services</h2>
+    <div class="grid-with-hover-wrapper">
+      <a class="grid-item">
+        <div class="grid-item-inner">
+          <img class="m-b-20" src="../../assets/images/homepage/service-web-crawling.svg" alt="Web crawling logo">
+          <h3>Web Crawling</h3>
+          <div class="hover-box">
+            <p>Quickly get the data you need with our fast and reliable web crawling service.</p>
+          </div>
+        </div>
+      </a>
+      <a class="grid-item">
+        <div class="grid-item-inner">
+          <img class="m-b-20" src="../../assets/images/homepage/service-software.svg" alt="Software Development logo">
+          <h3>Software Development</h3>
+          <div class="hover-box">
+            <p>Partnering with you to deliver customized software solutions for your unique business
+              with exceptional quality.
+            </p>
+          </div>
+        </div>
+      </a>
+      <a class="grid-item">
+        <div class="grid-item-inner">
+          <img class="m-b-20" src="../../assets/images/homepage/service-it.svg" alt="IT Consultant logo">
+          <h3>IT Consultant</h3>
+          <div class="hover-box">
+            <p>Guiding Your Business with Expert IT Advice.</p>
+          </div>
+        </div>
+      </a>
+      <a class="grid-item">
+        <div class="grid-item-inner">
+          <img class="m-b-20" src="../../assets/images/homepage/service-web-dev.svg" alt="Web Development logo">
+          <h3>Web Development</h3>
+          <div class="hover-box">
+            <p>Crafting User-Friendly Web Experiences with Innovative Solutions for Today's Businesses.</p>
+          </div>
+        </div>
+      </a>
+      <a class="grid-item">
+        <div class="grid-item-inner">
+          <img class="m-b-20" src="../../assets/images/homepage/service-e-commerce.svg" alt="E-Commerce logo">
+          <h3>Automation Solution</h3>
+          <div class="hover-box">
+            <p>Elevate Your Operations with Intelligent Automation.</p>
+          </div>
+        </div>
+      </a>
+      <a class="grid-item">
+        <div class="grid-item-inner">
+          <img class="m-b-20" src="../../assets/images/homepage/service-ui-ux.svg" alt="UI-UX logo">
+          <h3>UI-UX Design</h3>
+          <div class="hover-box">
+            <p>Craft intuitive interfaces and engaging user experiences with our expert UI/UX design service.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="technical-approach has-blue-bg">
+  <div class="container">
+    <h2 class="m-b-50">Technical Approach & Capabilities</h2>
+
+    <ul class="tech-approach-wrapper">
+      <li class="tech-approach-item">
+        <div class="tech-approach-inner">
+          <em>
+            <img src="../../assets/images/homepage/service-web-crawling.svg" alt="Web crawling logo">
+          </em>
+          <div class="text-wrapper m-l-20">
+            <h3 class="m-b-5">Agile Development Practices</h3>
+            <p>Adopts Agile methodologies to ensure flexible, iterative development with regular stakeholder engagement
+              and timely delivery.</p>
+          </div>
+        </div>
+      </li>
+      <li class="tech-approach-item">
+        <div class="tech-approach-inner">
+          <em>
+            <img src="../../assets/images/homepage/service-web-crawling.svg" alt="Web crawling logo">
+          </em>
+          <div class="text-wrapper m-l-20">
+            <h3 class="m-b-5">Advanced Web Crawling Techniques</h3>
+            <p>Utilizes cutting-edge algorithms and robust frameworks to efficiently scrape and aggregate data from
+              various web sources.</p>
+          </div>
+        </div>
+      </li>
+      <li class="tech-approach-item">
+        <div class="tech-approach-inner">
+          <em>
+            <img src="../../assets/images/homepage/service-web-crawling.svg" alt="Web crawling logo">
+          </em>
+          <div class="text-wrapper m-l-20">
+            <h3 class="m-b-5">Custom Software Solutions</h3>
+            <p>Develops tailored software applications that meet specific client needs, emphasizing scalability and
+              integration capabilities.</p>
+          </div>
+        </div>
+      </li>
+      <li class="tech-approach-item">
+        <div class="tech-approach-inner">
+          <em>
+            <img src="../../assets/images/homepage/service-web-crawling.svg" alt="Web crawling logo">
+          </em>
+          <div class="text-wrapper m-l-20">
+            <h3 class="m-b-5">Scalable Infrastructure</h3>
+            <p>Designs IT architectures that can scale effectively to handle increased loads and complex operations,
+              ensuring sustainability and adaptability.</p>
+          </div>
+        </div>
+      </li>
+      <li class="tech-approach-item">
+        <div class="tech-approach-inner">
+          <em>
+            <img src="../../assets/images/homepage/service-web-crawling.svg" alt="Web crawling logo">
+          </em>
+          <div class="text-wrapper m-l-20">
+            <h3 class="m-b-5">Performance Optimization</h3>
+            <p>Focuses on optimizing software performance through advanced coding techniques, efficient database
+              management, and resource optimization.</p>
+          </div>
+        </div>
+      </li>
+      <li class="tech-approach-item">
+        <div class="tech-approach-inner">
+          <em>
+            <img src="../../assets/images/homepage/technicalapprochicon/machine_learning_ai.png" alt="Web crawling logo">
+          </em>
+          <div class="text-wrapper m-l-20">
+            <h3 class="m-b-5">Machine Learning and AI</h3>
+            <p>Integrates AI and machine learning to enhance capabilities and automate complex processes.</p>
+          </div>
+        </div>
+      </li>
+      <li class="tech-approach-item">
+        <div class="tech-approach-inner">
+          <em>
+            <img src="../../assets/images/homepage/service-web-crawling.svg" alt="Web crawling logo">
+          </em>
+          <div class="text-wrapper m-l-20">
+            <h3 class="m-b-5">Quality Assurance</h3>
+            <p>Implements comprehensive testing to ensure software reliability and performance.</p>
+          </div>
+        </div>
+      </li>
+      <li class="tech-approach-item">
+        <div class="tech-approach-inner">
+          <em>
+            <img src="../../assets/images/homepage/technicalapprochicon/maintance.png" alt="Web crawling logo">
+          </em>
+          <div class="text-wrapper m-l-20">
+            <h3 class="m-b-5">Continuous Support and Maintenance</h3>
+            <p>Provides ongoing technical support and maintenance to ensure software reliability and up-to-date systems.
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="tab-with-slider text-center p-b-0">
+  <h2 class="m-b-30">Industries We Serve</h2>
+  <div class="astute-tab-wrapper">
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+      <mat-tab label="Software Development">
+        <ngx-slick-carousel class="carousel arrow-slider" #slickModal2="slick-carousel" [config]="slideConfig2">
+          <div ngxSlickItem class="tab-content-wrapper">
+            <div class="container">
+              <div class="img-content-wrapper">
+                <div class="text-wrapper">
+                  <h3 class="m-b-20">Retail & ECommerce</h3>
+                  <div class="atute-check-list">
+                    <ul>
+                      <li>Ecommerce Platforms</li>
+                      <li>Customer Relationship Management (CRM) Software</li>
+                      <li>Inventory Management Software</li>
+                      <li>Product Information Management (PIM) Software</li>
+                      <li>Email Marketing Tools</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="img-wrapper">
+                  <div class="img-inner">
+                    <img src="../../assets/images/homepage/ind-travel-and-hopitality-img.jpg" alt="Travel & Hospitality"
+                      class="bg-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div ngxSlickItem class="tab-content-wrapper">
+            <div class="container">
+              <div class="img-content-wrapper">
+                <div class="text-wrapper">
+                  <h3 class="m-b-20">Travel & Hospitality</h3>
+                  <div class="atute-check-list">
+                    <ul>
+                      <li>Online Booking Systems</li>
+                      <li>Hotel Management Software</li>
+                      <li>Customer Relationship Management (CRM) Systems</li>
+                      <li>Flight Tracking Apps</li>
+                      <li>Tour Operator Software</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="img-wrapper">
+                  <div class="img-inner">
+                    <img src="../../assets/images/homepage/ind-travel-and-hopitality-img.jpg" alt="Travel & Hospitality"
+                      class="bg-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div ngxSlickItem class="tab-content-wrapper">
+            <div class="container">
+              <div class="img-content-wrapper">
+                <div class="text-wrapper">
+                  <h3 class="m-b-20">Food & Beverages</h3>
+                  <div class="atute-check-list">
+                    <ul>
+                      <li>Online Ordering Systems</li>
+                      <li>Table Reservation Systems</li>
+                      <li>Delivery Management Systems</li>
+                      <li>Kiosk Ordering Systems</li>
+                      <li>Event Management Software</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="img-wrapper">
+                  <div class="img-inner">
+                    <img src="../../assets/images/homepage/ind-travel-and-hopitality-img.jpg" alt="Travel & Hospitality"
+                      class="bg-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div ngxSlickItem class="tab-content-wrapper">
+            <div class="container">
+              <div class="img-content-wrapper">
+                <div class="text-wrapper">
+                  <h3 class="m-b-20">Real Estate</h3>
+                  <div class="atute-check-list">
+                    <ul>
+                      <li>Real Estate Listing Platforms</li>
+                      <li>Document Management Systems</li>
+                      <li>Real Estate Marketing Software</li>
+                      <li>Property Management Software</li>
+                      <li>Real Estate Auction Platforms</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="img-wrapper">
+                  <div class="img-inner">
+                    <img src="../../assets/images/homepage/ind-travel-and-hopitality-img.jpg" alt="Travel & Hospitality"
+                      class="bg-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div ngxSlickItem class="tab-content-wrapper">
+            <div class="container">
+              <div class="img-content-wrapper">
+                <div class="text-wrapper">
+                  <h3 class="m-b-20">Health Care</h3>
+                  <div class="atute-check-list">
+                    <ul>
+                      <li>Electronic Health Record (EHR) Software</li>
+                      <li>Medical Billing Software</li>
+                      <li>Laboratory Information Systems (LIS)</li>
+                      <li>Appointment Scheduling Software</li>
+                      <li>Hospital Management Systems</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="img-wrapper">
+                  <div class="img-inner">
+                    <img src="../../assets/images/homepage/ind-travel-and-hopitality-img.jpg" alt="Travel & Hospitality"
+                      class="bg-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div ngxSlickItem class="tab-content-wrapper">
+            <div class="container">
+              <div class="img-content-wrapper">
+                <div class="text-wrapper">
+                  <h3 class="m-b-20">Automobiles</h3>
+                  <div class="atute-check-list">
+                    <ul>
+                      <li>Dealer Management Systems (DMS)</li>
+                      <li>Parts Inventory and Management Systems</li>
+                      <li>Electric Vehicle (EV) Charging Management Software</li>
+                      <li>Automotive Supply Chain Management (SCM) Softwar</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="img-wrapper">
+                  <div class="img-inner">
+                    <img src="../../assets/images/homepage/ind-travel-and-hopitality-img.jpg" alt="Travel & Hospitality"
+                      class="bg-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div ngxSlickItem class="tab-content-wrapper">
+            <div class="container">
+              <div class="img-content-wrapper">
+                <div class="text-wrapper">
+                  <h3 class="m-b-20">Finance</h3>
+                  <div class="atute-check-list">
+                    <ul>
+                      <li>Financial Planning Software</li>
+                      <li>Insurance Software</li>
+                      <li>Tax Preparation Software</li>
+                      <li>Accounting Software</li>
+                      <li>Payroll Software</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="img-wrapper">
+                  <div class="img-inner">
+                    <img src="../../assets/images/homepage/ind-travel-and-hopitality-img.jpg" alt="Travel & Hospitality"
+                      class="bg-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ngx-slick-carousel>
+      </mat-tab>
+      <mat-tab label="Web Crawling">
+        <ngx-slick-carousel class="carousel arrow-slider" #slickModal3="slick-carousel" [config]="slideConfig3">
+          <div ngxSlickItem class="tab-content-wrapper">
+            <div class="container">
+              <div class="img-content-wrapper">
+                <div class="text-wrapper">
+                  <h3 class="m-b-20">Retail & ECommerce</h3>
+                  <div class="atute-check-list">
+                    <ul>
+                      <li>Price Monitoring</li>
+                      <li>Product Assortment Monitoring</li>
+                      <li>Customer Review and Sentiment Analysis</li>
+                      <li>Brand Monitoring</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="img-wrapper">
+                  <div class="img-inner">
+                    <img src="../../assets/images/homepage/ind-travel-and-hopitality-img.jpg" alt="Travel & Hospitality"
+                      class="bg-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div ngxSlickItem class="tab-content-wrapper">
+            <div class="container">
+              <div class="img-content-wrapper">
+                <div class="text-wrapper">
+                  <h3 class="m-b-20">Travel & Hospitality</h3>
+                  <div class="atute-check-list">
+                    <ul>
+                      <li>Hotel Price Monitoring</li>
+                      <li>Flight Fare Aggregation</li>
+                      <li>Hotel Review Aggregation</li>
+                      <li>Destination Insights</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="img-wrapper">
+                  <div class="img-inner">
+                    <img src="../../assets/images/homepage/ind-travel-and-hopitality-img.jpg" alt="Travel & Hospitality"
+                      class="bg-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div ngxSlickItem class="tab-content-wrapper">
+            <div class="container">
+              <div class="img-content-wrapper">
+                <div class="text-wrapper">
+                  <h3 class="m-b-20">Food & Beverages</h3>
+                  <div class="atute-check-list">
+                    <ul>
+                      <li>Menu Scraping</li>
+                      <li>Ingredient Price Monitoring</li>
+                      <li>Review Aggregators</li>
+                      <li>Competitor Price Monitoring</li>
+                      <li>Event Monitoring</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="img-wrapper">
+                  <div class="img-inner">
+                    <img src="../../assets/images/homepage/ind-travel-and-hopitality-img.jpg" alt="Travel & Hospitality"
+                      class="bg-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div ngxSlickItem class="tab-content-wrapper">
+            <div class="container">
+              <div class="img-content-wrapper">
+                <div class="text-wrapper">
+                  <h3 class="m-b-20">Real Estate</h3>
+                  <div class="atute-check-list">
+                    <ul>
+                      <li>Property Listings Aggregator</li>
+                      <li>Price Monitoring</li>
+                      <li>Property Details Extraction</li>
+                      <li>Rental Market Analysis</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="img-wrapper">
+                  <div class="img-inner">
+                    <img src="../../assets/images/homepage/ind-travel-and-hopitality-img.jpg" alt="Travel & Hospitality"
+                      class="bg-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div ngxSlickItem class="tab-content-wrapper">
+            <div class="container">
+              <div class="img-content-wrapper">
+                <div class="text-wrapper">
+                  <h3 class="m-b-20">Health Care</h3>
+                  <div class="atute-check-list">
+                    <ul>
+                      <li>Drug Pricing and Availability Monitoring</li>
+                      <li>Health Insurance Plan Comparison</li>
+                      <li>Health News Aggregator</li>
+                      <li>Health Product Review Aggregator</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="img-wrapper">
+                  <div class="img-inner">
+                    <img src="../../assets/images/homepage/ind-travel-and-hopitality-img.jpg" alt="Travel & Hospitality"
+                      class="bg-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div ngxSlickItem class="tab-content-wrapper">
+            <div class="container">
+              <div class="img-content-wrapper">
+                <div class="text-wrapper">
+                  <h3 class="m-b-20">Automobiles</h3>
+                  <div class="atute-check-list">
+                    <ul>
+                      <li>Inventory Management</li>
+                      <li>Comparative Analysis</li>
+                      <li>Electric Vehicle Charging Stations</li>
+                      <li>Auction Data</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="img-wrapper">
+                  <div class="img-inner">
+                    <img src="../../assets/images/homepage/ind-travel-and-hopitality-img.jpg" alt="Travel & Hospitality"
+                      class="bg-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div ngxSlickItem class="tab-content-wrapper">
+            <div class="container">
+              <div class="img-content-wrapper">
+                <div class="text-wrapper">
+                  <h3 class="m-b-20">Entertainment</h3>
+                  <div class="atute-check-list">
+                    <ul>
+                      <li>Content Discovery</li>
+                      <li>Ad Performance Trackers</li>
+                      <li>Viewer Reviews and Feedback Analysis</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="img-wrapper">
+                  <div class="img-inner">
+                    <img src="../../assets/images/homepage/ind-travel-and-hopitality-img.jpg" alt="Travel & Hospitality"
+                      class="bg-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ngx-slick-carousel>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</section>
+
+<section class="home-blog-grid">
+  <div class="container">
+    <h2 class="m-b-30">Recent Blogs</h2>
+    <div class="three-col-grid-wrapper">
+      <div class="three-col-item">
+        <a href="#" class="three-col-item-inner">
+          <div class="img-wrapper">
+            <img src="../../assets/images/homepage/blog-img-2.jpg" alt="Blog Img" class="bg-img">
+          </div>
+          <div class="content-wrapper">
+            <p class="m-b-20">Serverless architecture is revolutionizing the way we think about deploying applications
+              and
+              services.
+              This innovative approach offers flexibility, scalability.</p>
+            <div class="gray-chip">
+              By John Doe 03.02.2018
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="three-col-item">
+        <a href="#" class="three-col-item-inner">
+          <div class="img-wrapper">
+            <img src="../../assets/images/homepage/blog-img-2.jpg" alt="Blog Img" class="bg-img">
+          </div>
+          <div class="content-wrapper">
+            <p class="m-b-20">Serverless architecture is revolutionizing the way we think about deploying applications
+              and
+              services. This innovative approach offers flexibility, scalability.</p>
+            <div class="gray-chip">
+              By John Doe 03.02.2018
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="three-col-item">
+        <a href="#" class="three-col-item-inner">
+          <div class="img-wrapper">
+            <img src="../../assets/images/homepage/blog-img-3.jpg" alt="Blog Img" class="bg-img">
+          </div>
+          <div class="content-wrapper">
+            <p class="m-b-20">Serverless architecture is revolutionizing the way we think about deploying applications
+              and
+              services.
+              This innovative approach offers flexibility, scalability.</p>
+            <div class="gray-chip">
+              By John Doe 03.02.2018
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,120 @@
+.astute-tab-wrapper {
+  mat-tab-header {
+    margin-bottom: 3rem;
+    .mat-mdc-tab-labels {
+      justify-content: center;
+      padding: 1rem;
+      border-radius: 7rem;
+      background-color: $gray;
+      display: inline-flex;
+      margin: 0 auto;
+      .mat-mdc-tab {
+        height: 40px;
+        line-height: 40px;
+        padding: 0 2rem;
+        .mat-ripple {
+          border-radius: 7rem;
+        }
+        &.mdc-tab--active {
+          background-color: $white;
+          border-radius: 7rem;
+        }
+        .mdc-tab__text-label {
+          font-size: 2rem;
+          color: $blue;
+          font-weight: 500;
+        }
+        .mdc-tab-indicator__content,
+        .mat-mdc-focus-indicator {
+          display: none;
+        }
+        & + .mat-mdc-tab {
+          margin-left: 1rem;
+        }
+        .mdc-tab__ripple {
+          &::before {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+  .mat-mdc-tab-body-wrapper {
+    background-color: $gray;
+    padding: 5rem 0;
+    .mat-mdc-tab-body {
+      .mat-mdc-tab-body-content {
+        padding-bottom: 8rem;
+      }
+    }
+    .img-content-wrapper {
+      display: flex;
+      align-items: center;
+      margin: 0 -1.5rem;
+      min-width: 100%;
+      .text-wrapper {
+        max-width: 60%;
+        flex: 0 0 60%;
+        padding: 0 1.5rem;
+        text-align: left;
+        h3 {
+          font-weight: 500;
+        }
+        p {
+          font-size: 1.6rem;
+        }
+      }
+      .img-wrapper {
+        max-width: 40%;
+        flex: 0 0 40%;
+        padding: 0 1.5rem 1rem;
+        .img-inner {
+          padding-bottom: 74%;
+          position: relative;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 20px;
+          img {
+            border-radius: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+.arrow-slider {
+  .slick-next {
+    right: auto;
+    transform: translateX(-50%);
+    top: calc(100% + 3rem);
+    height: 5rem;
+    width: 5rem;
+    left: calc(50% + 3rem);
+    &:before {
+      font-family: "FontAwesome";
+      content: "\f061";
+      color: $blue;
+      font-size: 3rem;
+    }
+  }
+  .slick-prev {
+    left: calc(50% - 3rem);
+    transform: translateX(-50%) rotate(180deg);
+    top: calc(100% + 3rem);
+    height: 5rem;
+    width: 5rem;
+    &:before {
+      font-family: "FontAwesome";
+      content: "\f061";
+      color: $blue;
+      font-size: 3rem;
+      transform: rotate(180deg);
+    }
+  }
+}
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: auto;
+}

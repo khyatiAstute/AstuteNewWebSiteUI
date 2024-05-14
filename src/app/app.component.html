@@ -1,0 +1,247 @@
+<!-- header start -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astute Info Solution</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-wrapper">
+        <div class="logo-wrapper">
+          <a routerLink="/home" title="Astute Info Solution">
+            <img src="../assets/images/astutelogo/astute-logo.svg" alt="Astute Info Solution">
+          </a>
+        </div>
+        <div class="navigation-wrapper">
+          <nav class="main-nav">
+            <div class="nav-icon-mobo" (click)="toggleSidebar()">
+              <span>hamburger menu</span>
+            </div>
+            <div class="navigation-inner">
+              <ul class="menu-navigation">
+                <li>
+                  <a routerLink="/home" title="HOME">HOME</a>
+                </li>
+                <li class="has-submenu">
+                  <a routerLink="/home" title="SOLUTIONS">SOLUTIONS</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="#" title="Sol 1">Sol 1</a>
+                    </li>
+                    <li>
+                      <a href="#" title="Sol 2">Sol 2</a>
+                    </li>
+                  </ul>
+                  <span class="down-arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                </li>
+                <li class="has-submenu">
+                  <a routerLink="/home" title="INDUSTRIES">INDUSTRIES</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="#" title="ind 1">ind 1</a>
+                    </li>
+                    <li>
+                      <a href="#" title="ind 2">ind 2</a>
+                    </li>
+                  </ul>
+                  <span class="down-arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+
+                </li>
+                <li class="has-submenu">
+                  <a routerLink="/home" title="RESOURCES">RESOURCES</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="#" title="resource 1">resource 1</a>
+                    </li>
+                    <li>
+                      <a href="#" title="resource 1">resource 1</a>
+                    </li>
+                  </ul>
+                  <span class="down-arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+
+                </li>
+                <li class="has-submenu">
+                  <a routerLink="/home" title="COMPANY">COMPANY</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="#" title="resource 1">resource 1</a>
+                    </li>
+                    <li>
+                      <a href="#" title="resource 1">resource 1</a>
+                    </li>
+                  </ul>
+                  <span class="down-arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+
+                </li>
+                <li class="has-btn">
+                  <a routerLink="/home" class="arrow-btn" title="SCHEDULE DEMO"><span>SCHEDULE DEMO</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+    <router-outlet></router-outlet>
+  </div>
+  <footer class="site-footer has-blue-bg">
+    <div class="footer-top">
+      <div class="container">
+        <div class="d-flex">
+          <div class="text-wrapper">
+            <p class="footer-que m-b-10">Ready to build your custom application solution?</p>
+            <p>Send us your requirements on <a href="mailto:sales@astuteinfosolution.com"
+                title="Mail Us">sales@astuteinfosolution.com</a> or call <a href="callto:+14966383402"
+                title="Call Us">+1 496 638 3402</a></p>
+          </div>
+          <a routerLink="/home" class="white-btn" title="Request a Proposal"><span>Request a Proposal</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-link-wrapper">
+          <div class="logo-wrapper">
+            <a routerLink="" class="m-b-20">
+              <img src="../assets/images/astutelogo/astute-white-logo.svg" alt="Astute Info Solution">
+            </a>
+            <p>We are dedicated to driving innovation and excellence in Software Development,IT Consulting and Web
+              Crawling Solutions.With a commitment to quality,reliability,and cutting-edge solutions,we are your trusted
+              partner in the digital age.Discover the future of technology with Astute.</p>
+          </div>
+          <div class="footer-col">
+            <p class="footer-title m-b-20">SERVICES</p>
+            <ul>
+              <li class="m-b-10">
+                <a href="" title="Web Crawling">Web Crawling</a>
+              </li>
+              <li class="m-b-10">
+                <a href="" title="Software Development">Software Development</a>
+              </li>
+              <li class="m-b-10">
+                <a href="" title="IT Consulting">IT Consulting</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <p class="footer-title m-b-20">INFORMATION</p>
+            <ul>
+              <li class="m-b-10">
+                <a href="" title="Blogs">Blogs</a>
+              </li>
+              <li class="m-b-10">
+                <a href="" title="Case Study">Case Study</a>
+              </li>
+              <li class="m-b-10">
+                <a href="" title="White Paper">White Paper</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <p class="footer-title m-b-20">PAGES</p>
+            <ul>
+              <li class="m-b-10">
+                <a href="" title="About Us">About Us</a>
+              </li>
+              <li class="m-b-10">
+                <a href="" title="Careers">Careers</a>
+              </li>
+              <li class="m-b-10">
+                <a href="" title="Contact Us">Contact Us</a>
+              </li>
+              <li class="m-b-10">
+                <a href="" title="Policy">Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contact-wrapper">
+            <p class="footer-title m-b-20">CONTACT US</p>
+            <ul>
+              <li class="m-b-10">
+                <a href="tel:+919909161653" title="Call Us">
+                  <em class="m-r-10">
+                    <i class="fa-solid fa-phone"></i>
+                  </em>
+                  +91-9909161653</a>
+              </li>
+              <li class="m-b-10">
+                <a href="mailto:sales@astuteinfosolution.com" title="Mail Us">
+                  <em class="m-r-10">
+                    <i class="fa-solid fa-envelope"></i>
+                  </em>
+                  sales@astuteinfosolution.com
+                </a>
+              </li>
+              <li class="m-b-10">
+                <a href="www.astuteinfosolution.com" title="Reach Us">
+                  <em class="m-r-10">
+                    <i class="fa-solid fa-globe"></i>
+                  </em>
+                  www.astuteinfosolution.com</a>
+              </li>
+              <li class="m-b-10">
+                <em class="m-r-10">
+                  <i class="fa-solid fa-location-dot"></i>
+                </em>
+                <address>
+                  612, Signature arcade,<br>
+                  near gangotri circle, <br>
+                  Nikol, Ahmedabad,<br>
+                  Gujarat 382350<br>
+                </address>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="social-media-wrapper">
+          <ul class="d-flex p-b-20 m-b-20">
+            <li>
+              <a href="" title="join Us on Pinterest" target="_blank">
+                <i class="fa-brands fa-pinterest"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" title="join Us on Facebook" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" title="join Us on Twitter" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" title="join Us on Linkdin" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" title="join Us on Instagram" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" title="join Us on Medium" target="_blank">
+                <i class="fa-brands fa-medium"></i>
+              </a>
+            </li>
+          </ul>
+          <p class="text-center">© 2023 Astute Info Solution. All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/jquery.min.js" defer></script>
+  <script src="assets/js/master.js" defer></script>
+</body>
+</html>
+
+<!-- footer start -->
