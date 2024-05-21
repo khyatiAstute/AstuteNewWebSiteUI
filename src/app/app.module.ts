@@ -6,14 +6,17 @@ import { HomeComponent } from './home/home.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { CarouselModule } from 'primeng/carousel';
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, AboutusComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SlickCarouselModule,
     MatTabsModule,
     BrowserAnimationsModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

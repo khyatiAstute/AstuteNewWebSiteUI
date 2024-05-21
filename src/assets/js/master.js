@@ -127,17 +127,4 @@ Particle = function () {
   }
 }
 
-$(document).ready(() => {
-  $('.typing-text').each(function () {
-    var $this = $(this);
-    var text = $this.text();
-    $this.empty();
-    var chars = text.split('');
-
-    $.each(chars, function (i, char) {
-      $this.append($('<span>').text(char).css('display', 'none').delay(100 * i).fadeIn(100));
-    });
-
-  });
-});
 

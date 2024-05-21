@@ -15,7 +15,7 @@ export class ParticleAnimationService {
   static options = {
     particleColor: "rgba(173, 172, 172)",
     lineColor: "rgba(240, 240, 240,0.5)",
-    particleAmount: 100,
+    particleAmount: 75,
     defaultRadius: .4,
     variantRadius: 4,
     defaultSpeed: .3,

@@ -1,0 +1,38 @@
+.has-gray-bg {
+  background-color: $gray;
+}
+.light-purple-bg {
+  background-color: $purple;
+}
+.light-green-bg {
+  background-color: $green;
+}
+.light-blue-bg {
+  background-color: $light-secondary;
+}
+.bg-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+.has-blue-bg {
+  background-color: $blue;
+  h2,
+  p,
+  h3 {
+    color: $white !important;
+  }
+}

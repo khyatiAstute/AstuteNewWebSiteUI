@@ -14,6 +14,9 @@
         padding: 0 2rem;
         .mat-ripple {
           border-radius: 7rem;
+          &:before {
+            background-color: $primary-black;
+          }
         }
         &.mdc-tab--active {
           background-color: $white;
@@ -33,7 +36,8 @@
         }
         .mdc-tab__ripple {
           &::before {
-            opacity: 0;
+            background-color: $primary-black;
+            border-radius: 2rem;
           }
         }
       }
@@ -42,11 +46,6 @@
   .mat-mdc-tab-body-wrapper {
     background-color: $gray;
     padding: 5rem 0;
-    .mat-mdc-tab-body {
-      .mat-mdc-tab-body-content {
-        padding-bottom: 8rem;
-      }
-    }
     .img-content-wrapper {
       display: flex;
       align-items: center;
@@ -63,6 +62,11 @@
         p {
           font-size: 1.6rem;
         }
+        li {
+          &:empty {
+            display: none;
+          }
+        }
       }
       .img-wrapper {
         max-width: 40%;
@@ -71,10 +75,11 @@
         .img-inner {
           padding-bottom: 74%;
           position: relative;
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           border-radius: 20px;
           img {
             border-radius: 2rem;
+            object-fit: contain;
           }
         }
       }
@@ -117,4 +122,36 @@
 
 .slick-slide {
   height: auto;
+}
+
+p-carousel {
+  .p-carousel-prev,
+  .p-carousel-next {
+    display: none;
+  }
+  .p-carousel-items-content {
+    min-height: 365px !important;
+  }
+  .p-carousel-indicators {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    li {
+      button {
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        background-color: $gray2;
+      }
+      + li {
+        margin-left: 1rem;
+      }
+      &.p-highlight {
+        button {
+          background-color: $blue;
+        }
+      }
+    }
+  }
 }

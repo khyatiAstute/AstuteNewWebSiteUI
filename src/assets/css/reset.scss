@@ -351,12 +351,10 @@ select:-moz-focusring {
 }
 
 body {
-  line-height: 1;
   box-sizing: border-box;
   font-weight: 400;
   font-family: "Inter", sans-serif;
-
-  line-height: 1.2;
+  line-height: 1.5;
   font-size: 1.6rem;
   color: $primary-black;
 }
@@ -513,24 +511,7 @@ p + p {
     }
   }
 }
-.has-gray-bg {
-  background-color: $gray;
-}
-.has-blue-bg {
-  background-color: $blue;
-  h2,
-  p,
-  h3 {
-    color: $white !important;
-  }
-}
-.bg-img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-}
+
 .atute-check-list {
   ul {
     li {
@@ -553,9 +534,7 @@ p + p {
     }
   }
 }
-.text-center {
-  text-align: center;
-}
+
 .gray-chip {
   display: inline-block;
   background-color: $gray;
@@ -564,10 +543,7 @@ p + p {
   font-size: 1.4rem;
   color: $blue;
 }
-.d-flex {
-  display: flex;
-  align-items: center;
-}
+
 .carousel {
   opacity: 0;
   &.slick-initialized {
